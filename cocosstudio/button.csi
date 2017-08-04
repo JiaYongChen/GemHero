@@ -1,0 +1,76 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="button" Type="Plist" ID="f8ed1533-78fb-4b2c-9339-14cd6e1c2f95" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="res/btn/an/an1.png" />
+      <FilePathData Path="res/btn/an/an10.png" />
+      <FilePathData Path="res/btn/an/an11.png" />
+      <FilePathData Path="res/btn/an/an12.png" />
+      <FilePathData Path="res/btn/an/an13.png" />
+      <FilePathData Path="res/btn/an/an14.png" />
+      <FilePathData Path="res/btn/an/an15.png" />
+      <FilePathData Path="res/btn/an/an16.png" />
+      <FilePathData Path="res/btn/an/an17.png" />
+      <FilePathData Path="res/btn/an/an2.png" />
+      <FilePathData Path="res/btn/an/an3.png" />
+      <FilePathData Path="res/btn/an/an4.png" />
+      <FilePathData Path="res/btn/an/an5.png" />
+      <FilePathData Path="res/btn/an/an6.png" />
+      <FilePathData Path="res/btn/an/an7.png" />
+      <FilePathData Path="res/btn/an/an8.png" />
+      <FilePathData Path="res/btn/an/an9.png" />
+      <FilePathData Path="res/btn/cyan/cyan1.png" />
+      <FilePathData Path="res/btn/cyan/cyan10.png" />
+      <FilePathData Path="res/btn/cyan/cyan11.png" />
+      <FilePathData Path="res/btn/cyan/cyan12.png" />
+      <FilePathData Path="res/btn/cyan/cyan13.png" />
+      <FilePathData Path="res/btn/cyan/cyan14.png" />
+      <FilePathData Path="res/btn/cyan/cyan15.png" />
+      <FilePathData Path="res/btn/cyan/cyan16.png" />
+      <FilePathData Path="res/btn/cyan/cyan17.png" />
+      <FilePathData Path="res/btn/cyan/cyan2.png" />
+      <FilePathData Path="res/btn/cyan/cyan3.png" />
+      <FilePathData Path="res/btn/cyan/cyan4.png" />
+      <FilePathData Path="res/btn/cyan/cyan5.png" />
+      <FilePathData Path="res/btn/cyan/cyan6.png" />
+      <FilePathData Path="res/btn/cyan/cyan7.png" />
+      <FilePathData Path="res/btn/cyan/cyan8.png" />
+      <FilePathData Path="res/btn/cyan/cyan9.png" />
+      <FilePathData Path="res/btn/light/light.png" />
+      <FilePathData Path="res/btn/light/light10.png" />
+      <FilePathData Path="res/btn/light/light11.png" />
+      <FilePathData Path="res/btn/light/light12.png" />
+      <FilePathData Path="res/btn/light/light13.png" />
+      <FilePathData Path="res/btn/light/light14.png" />
+      <FilePathData Path="res/btn/light/light15.png" />
+      <FilePathData Path="res/btn/light/light16.png" />
+      <FilePathData Path="res/btn/light/light17.png" />
+      <FilePathData Path="res/btn/light/light2.png" />
+      <FilePathData Path="res/btn/light/light3.png" />
+      <FilePathData Path="res/btn/light/light4.png" />
+      <FilePathData Path="res/btn/light/light5.png" />
+      <FilePathData Path="res/btn/light/light6.png" />
+      <FilePathData Path="res/btn/light/light7.png" />
+      <FilePathData Path="res/btn/light/light8.png" />
+      <FilePathData Path="res/btn/light/light9.png" />
+      <FilePathData Path="res/btn/normal/normal1.png" />
+      <FilePathData Path="res/btn/normal/normal10.png" />
+      <FilePathData Path="res/btn/normal/normal11.png" />
+      <FilePathData Path="res/btn/normal/normal12.png" />
+      <FilePathData Path="res/btn/normal/normal13.png" />
+      <FilePathData Path="res/btn/normal/normal14.png" />
+      <FilePathData Path="res/btn/normal/normal15.png" />
+      <FilePathData Path="res/btn/normal/normal16.png" />
+      <FilePathData Path="res/btn/normal/normal17.png" />
+      <FilePathData Path="res/btn/normal/normal2.png" />
+      <FilePathData Path="res/btn/normal/normal3.png" />
+      <FilePathData Path="res/btn/normal/normal4.png" />
+      <FilePathData Path="res/btn/normal/normal5.png" />
+      <FilePathData Path="res/btn/normal/normal6.png" />
+      <FilePathData Path="res/btn/normal/normal7.png" />
+      <FilePathData Path="res/btn/normal/normal8.png" />
+      <FilePathData Path="res/btn/normal/normal9.png" />
+    </ImageFiles>
+    <MaxSize Width="512" Height="512" />
+  </Content>
+</PlistInfoProjectFile>

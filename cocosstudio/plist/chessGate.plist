@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>res/chessGate/cellect.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{528,573},{63,63}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{63,63}</string>
+			</dict>
+			<key>res/chessGate/cellectT.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{982,622},{201,26}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{201,26}</string>
+			</dict>
+			<key>res/chessGate/gqxzbg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{592,482}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{592,482}</string>
+			</dict>
+			<key>res/chessGate/noTop.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{481,740},{124,31}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{124,31}</string>
+			</dict>
+			<key>res/chessGate/phbt.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{481,573},{167,47}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{167,47}</string>
+			</dict>
+			<key>res/chessGate/prop.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{481,482},{91,98}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{91,98}</string>
+			</dict>
+			<key>res/chessGate/time.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{528,636},{63,63}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{63,63}</string>
+			</dict>
+			<key>res/chessGate/timeT.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{982,377},{245,26}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{245,26}</string>
+			</dict>
+			<key>res/chessGate/xiaochu.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{528,699},{63,63}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{63,63}</string>
+			</dict>
+			<key>res/chessGate/xiaochuT.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{982,823},{201,26}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{201,26}</string>
+			</dict>
+			<key>res/buyStrength/bctl.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{982,209},{168,40}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{168,40}</string>
+			</dict>
+			<key>res/buyStrength/bottle.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,994},{25,53}}</string>
+				<key>offset</key>
+				<string>{0,-1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{61,61}</string>
+			</dict>
+			<key>res/buyStrength/mytll.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{982,0},{209,40}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{209,40}</string>
+			</dict>
+			<key>res/buyStrength/tlbg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{592,0},{446,390}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{446,390}</string>
+			</dict>
+			<key>res/top/bg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,482},{512,481}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{512,481}</string>
+			</dict>
+			<key>res/bag/bagbg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{592,446},{424,390}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{424,390}</string>
+			</dict>
+			<key>res/bag/locker.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{53,994},{29,35}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{61,61}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>chessGate.png</string>
+			<key>realTextureFileName</key>
+			<string>chessGate.png</string>
+			<key>size</key>
+			<string>{1022,1024}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1022</integer>
+			<key>height</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+</plist>

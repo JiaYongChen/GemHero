@@ -1,0 +1,32 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="mainScene" Type="Plist" ID="618dcaeb-f5ad-48f3-bcac-16bf69039b2b" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="res/mainScene/btnbag.png" />
+      <FilePathData Path="res/mainScene/btnhelp.png" />
+      <FilePathData Path="res/mainScene/btnshop.png" />
+      <FilePathData Path="res/mainScene/btntop.png" />
+      <FilePathData Path="res/mainScene/gq.png" />
+      <FilePathData Path="res/mainScene/gqlock.png" />
+      <FilePathData Path="res/mainScene/hp.png" />
+      <FilePathData Path="res/mainScene/hpbg.png" />
+      <FilePathData Path="res/mainScene/I.png" />
+      <FilePathData Path="res/mainScene/moneybg.png" />
+      <FilePathData Path="res/mainScene/numbers.png" />
+      <FilePathData Path="res/mainScene/progress.png" />
+      <FilePathData Path="res/mainScene/road.png" />
+      <FilePathData Path="res/mainScene/road2.png" />
+      <FilePathData Path="res/mainScene/road3.png" />
+      <FilePathData Path="res/mainScene/road4.png" />
+      <FilePathData Path="res/mainScene/road5.png" />
+      <FilePathData Path="res/mainScene/road6.png" />
+      <FilePathData Path="res/mainScene/soundoff.png" />
+      <FilePathData Path="res/mainScene/soundon.png" />
+      <FilePathData Path="res/mainScene/STAR.png" />
+      <FilePathData Path="res/mainScene/starbag.png" />
+      <FilePathData Path="res/mainScene/starbagbg.png" />
+      <FilePathData Path="res/mainScene/yun.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="512" />
+  </Content>
+</PlistInfoProjectFile>

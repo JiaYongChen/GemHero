@@ -1,0 +1,32 @@
+#ignore files build by Visual Studio
+*.obj
+*.exe
+
+#ignore Android files
+proj.android-studio/build
+proj.android-studio/.gradle
+proj.android-studio/.idea
+proj.android-studio/local.properties
+proj.android-studio/proj.android-studio.iml
+proj.android-studio/app/assets
+proj.android-studio/app/build
+proj.android-studio/app/libs
+proj.android-studio/app/obj
+proj.android-studio/app/build.xml
+proj.android-studio/app/GemHero.iml
+proj.android-studio/app/*.apk
+proj.android-studio/app/gradle.properties
+proj.android-studio/app/local.properties
+proj.android-studio/app/proguard-project.txt
+proj.android-studio/app/proguard-rules.pro
+
+proj.android/obj
+proj.android/libs
+proj.android/local.properties
+
+#ignore VS files
+proj.win32/.vs
+proj.win32/Debug
+proj.win32/Debug.win32
+proj.win32/GemHero.VC.db
+proj.win32/UpgradeLog.htm

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameScene">
+      <UniqueIdentifier>{7efe54a4-2f48-4a41-b1ce-1c11f836c7e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameCommon">
+      <UniqueIdentifier>{b1ef0024-8535-48f1-b510-bc6fec3dfabb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\MainScene">
+      <UniqueIdentifier>{646ba89f-4c20-4f95-bd4e-103bad2b284d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GamePlayingScene.cpp">
+      <Filter>src\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GamePlayingSceneData.cpp">
+      <Filter>src\GameCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLogic.cpp">
+      <Filter>src\GameCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameConfig.cpp">
+      <Filter>src\GameCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ChooseLevel.cpp">
+      <Filter>src\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameMainScene.cpp">
+      <Filter>src\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ImageName.cpp">
+      <Filter>src\GameCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IniFileParse.cpp">
+      <Filter>src\GameCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainLevel.cpp">
+      <Filter>src\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainlevelInfo.cpp">
+      <Filter>src\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainLevelLayer.cpp">
+      <Filter>src\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ReadLevelInfo.cpp">
+      <Filter>src\GameCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UserGameData.cpp">
+      <Filter>src\GameCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTargetNode.cpp">
+      <Filter>src\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ChessboardLayer.cpp">
+      <Filter>src\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameMapLayer.cpp">
+      <Filter>src\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SpriteNode.cpp">
+      <Filter>src\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameRoleLayer.cpp">
+      <Filter>src\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GamingLayer.cpp">
+      <Filter>src\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameStumblingLayer.cpp">
+      <Filter>src\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameEnd.cpp">
+      <Filter>src\GameScene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GamePlayingScene.h">
+      <Filter>src\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GamePlayingSceneData.h">
+      <Filter>src\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CMD_ThreeEliminate.h">
+      <Filter>src\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLogic.h">
+      <Filter>src\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameConfig.h">
+      <Filter>src\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChooseLevel.h">
+      <Filter>src\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMainScene.h">
+      <Filter>src\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ImageName.h">
+      <Filter>src\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IniFileParse.h">
+      <Filter>src\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainLevel.h">
+      <Filter>src\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainlevelInfo.h">
+      <Filter>src\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainLevelLayer.h">
+      <Filter>src\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ReadLevelInfo.h">
+      <Filter>src\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UserGameData.h">
+      <Filter>src\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTargetNode.h">
+      <Filter>src\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChessboardLayer.h">
+      <Filter>src\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMapLayer.h">
+      <Filter>src\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SpriteNode.h">
+      <Filter>src\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Resource.h">
+      <Filter>src\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameRoleLayer.h">
+      <Filter>src\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GamingLayer.h">
+      <Filter>src\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameStumblingLayer.h">
+      <Filter>src\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameEnd.h">
+      <Filter>src\GameScene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
