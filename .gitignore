@@ -1,6 +1,9 @@
 #ignore files build by Visual Studio
 *.obj
 *.exe
+.vs
+.vscode
+bin
 
 #ignore Android files
 proj.android-studio/build
