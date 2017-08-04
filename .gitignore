@@ -18,7 +18,6 @@ proj.android-studio/app/*.apk
 proj.android-studio/app/gradle.properties
 proj.android-studio/app/local.properties
 proj.android-studio/app/proguard-project.txt
-proj.android-studio/app/proguard-rules.pro
 
 proj.android/obj
 proj.android/libs
