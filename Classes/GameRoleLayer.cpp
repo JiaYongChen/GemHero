@@ -82,6 +82,10 @@ void CGameGemLayer::update(float delta) {
 					continue;
 				}
 
+				auto visibleSize = Director::getInstance()->getVisibleSize();
+				int offsetH = (visibleSize.height - ROW_COUNT * 61) / 2 + ROW_COUNT * 61;
+				int offserW = (visibleSize.width - COL_COUNT * 61) / 2;
+
 				if (pTileBrick->gem.moveAction == MOVE_ACTION)
 				{
 					SpriteNode *node = getSpriteNode(posX, posY);
@@ -90,14 +94,10 @@ void CGameGemLayer::update(float delta) {
 						tagBaseData *pGem = node->getData();
 						if (node != nullptr)
 						{
-							auto visibleSize = Director::getInstance()->getVisibleSize();
-							int offsetH = (visibleSize.height - ROW_COUNT * 61) / 2 + ROW_COUNT * 61;
-							int offserW = (visibleSize.width - COL_COUNT * 61) / 2;
-
 							float moveX = node->getPositionX();
 							float moveY = node->getPositionY() - length;
 							float leftMove = node->getPositionX() - length;
-							float rightMove = node->getPositionX() - length;
+							float rightMove = node->getPositionX() + length;
 
 							enDirection moveDir = node->getMoveDirection();
 							result = true;
@@ -110,17 +110,17 @@ void CGameGemLayer::update(float delta) {
 								//CCLOG("DOWN_DIRECTION:%d %d positionY%f",posX,posY,moveY);
 								break;
 							case LEFT_DIRECTION:
-								node->setPosition(Vec2(moveX, leftMove));
+								node->setPosition(Vec2(leftMove, moveY));
 								//CCLOG("LEFT_DIRECTION:%d %d", posX, posY);
 								break;
 							case RIGHT_DIRECTION:
-								node->setPosition(Vec2(moveX, rightMove));
+								node->setPosition(Vec2(rightMove, moveY));
 								//CCLOG("RIGHT_DIRECTION:%d %d", posX, posY);
 								break;
 							case CENT_DIRECTION: {
 								node->setPosition(offserW + pGem->indexY * node->getSpriteNodeWidth() + node->getSpriteNodeWidth() / 2, offsetH - pGem->indexX * node->getSpriteNodeHeight() - node->getSpriteNodeHeight() / 2);
 							}
-												 break;
+								break;
 							}
 
 							if (node->getPositionY() <= offsetH - pGem->indexX * node->getSpriteNodeHeight() - node->getSpriteNodeHeight() / 2)
@@ -131,6 +131,11 @@ void CGameGemLayer::update(float delta) {
 							else
 							{
 								continue;
+							}
+
+							if (node->getPositionY() <=  offsetH - pGem->indexX * node->getSpriteNodeHeight())
+							{
+								node->setVisible(true);
 							}
 						}
 					}
@@ -216,6 +221,16 @@ void CGameGemLayer::update(float delta) {
 						}
 					}
 					this->setLayerData(pdata);
+					for each (tagBaseData *basedata in pdata)
+					{
+						SpriteNode* node =  getSpriteNode(basedata->indexX, basedata->indexY);
+						if (node != nullptr)
+						{
+							node->setPositionY(offsetH - basedata->indexX * node->getSpriteNodeHeight() + node->getSpriteNodeHeight() / 2);
+							node->setVisible(false);
+							node->setMoveDirection(DOWN_DIRECTION);
+						}
+					}
 				}
 			}
 		}
@@ -240,18 +255,6 @@ void CGameGemLayer::setGemMove(int indexX, int indexY , enRunAction action) {
 			sprite->getData()->moveAction = action;
 		}
 	}
-}
-
-SpriteNode* CGameGemLayer::getSpriteNode(int indexX, int indexY) {
-	for (auto sprite : _data)
-	{
-		if (sprite->getData()->indexX == indexX && sprite->getData()->indexY == indexY)
-		{
-			return sprite;
-		}
-	}
-
-	return nullptr;
 }
 
 bool CGameGemLayer::onTouchBegan(Touch *touch, Event *unused_event) {
@@ -320,8 +323,8 @@ void CGameGemLayer::onTouchEnded(Touch *touch, Event *unused_event) {
 
 	if (_touchBeginIndex != _touchEndIndex && _isTouch)
 	{
-		tagGemData *scoreData = getGemData(_touchBeginIndex.x, _touchBeginIndex.y);
-		tagGemData *targetData = getGemData(_touchEndIndex.x, _touchEndIndex.y);
+		tagGemData *scoreData = (tagGemData *)getData(_touchBeginIndex.x, _touchBeginIndex.y);
+		tagGemData *targetData = (tagGemData *)getData(_touchEndIndex.x, _touchEndIndex.y);
 		if (scoreData->bMove == false || targetData->bMove == false)
 		{
 			_isTouch = false;
@@ -438,18 +441,6 @@ void CGameGemLayer::removeLayerData(const PBaseData &data) {
 	}
 }
 
-tagGemData* CGameGemLayer::getGemData(int indexX, int indexY) {
-	for (auto sprite : _data)
-	{
-		if (sprite->getSpriteNodeIndex().x == indexX && sprite->getSpriteNodeIndex().y == indexY)
-		{
-			return (tagGemData*)(sprite->getData());
-		}
-	}
-
-	return nullptr;
-}
-
 //////////////////////////////////////////////////////////////////////////
 CGameRoleLayer::CGameRoleLayer() {
 
@@ -498,7 +489,10 @@ void CGameRoleLayer::setRoleData(const PBaseData &gemData, const PBaseData &spDa
 	}
 
 	PBaseData upData, downData;
-	for (auto data : spData){
+	upData.clear();
+	downData.clear();
+	for (auto data : spData)
+	{
 		if (((tagBaseData*)data)->childType == STUMBLING_BLOCK_GOLD_POD || ((tagBaseData*)data)->childType == STUMBLING_BLOCK_SILVER_COIN)
 		{
 			TileBrickData *pTile = CGameLogic::getInstance().currentTileBrickItem(data->indexX, data->indexY);
@@ -523,13 +517,33 @@ void CGameRoleLayer::setRoleData(const PBaseData &gemData, const PBaseData &spDa
 void CGameRoleLayer::removeRoleData(const std::vector<cocos2d::Vec2> gemData, const std::vector<cocos2d::Vec2> spData) {
 	PBaseData pGemData;
 	for (auto data : gemData) {
-		tagGemData *gData = dynamic_cast<CGameGemLayer*>(_gemLayer)->getGemData(data.x,data.y);
+		tagBaseData *gData = dynamic_cast<CGameGemLayer*>(_gemLayer)->getData(data.x,data.y);
 		if (gData != nullptr)
 		{
 			pGemData.push_back(gData);
 		}
 	}
 	dynamic_cast<CGameGemLayer*>(_gemLayer)->removeLayerData(pGemData);
+
+	PBaseData pUpStumblingData;
+	for (auto data : spData) {
+		tagBaseData *gData = dynamic_cast<CGameUpStumblingLayer*>(_upStumblingLayer)->getData(data.x, data.y);
+		if (gData != nullptr)
+		{
+			pUpStumblingData.push_back(gData);
+		}
+	}
+	dynamic_cast<CGameUpStumblingLayer*>(_upStumblingLayer)->removeLayerData(pUpStumblingData);
+
+	PBaseData pDownStumblingData;
+	for (auto data : spData) {
+		tagBaseData *gData = dynamic_cast<CGameDownStumblingLayer*>(_downStumblingLayer)->getData(data.x, data.y);
+		if (gData != nullptr)
+		{
+			pDownStumblingData.push_back(gData);
+		}
+	}
+	dynamic_cast<CGameDownStumblingLayer*>(_downStumblingLayer)->removeLayerData(pDownStumblingData);
 }
 
 void CGameRoleLayer::setSpecialRoleData(const std::vector<ObtainSpecialGemInfo> &info) {

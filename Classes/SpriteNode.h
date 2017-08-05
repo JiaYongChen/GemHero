@@ -85,6 +85,9 @@ protected:
 
 public:
 	virtual bool initWithData(const std::string& name, tagBaseData* data);
+
+private:
+	cocos2d::Label *_stumblingAttribute;
 };
 
 #endif

@@ -50,7 +50,7 @@ void ChessboardLayer::callBack(int type1, int type2, int type3) {
 		onBonusTime();
 		break;
 	case GAME_STATUS_GAME_END:
-		CCLOG("GAME_STATUS_GAME_END");
+		//CCLOG("GAME_STATUS_GAME_END");
 		break;
 	default:
 		break;
@@ -105,15 +105,14 @@ void ChessboardLayer::swapGem(swapGemStatus status) {
 	std::vector<Vec2> removeGem, removeStumbling;
 	SpecialBrickData spData;
 	std::vector<ObtainSpecialGemInfo> GemsInfo;
+	removeGem.clear();
+	spData.clear();
+	GemsInfo.clear();
 	if (status == NORMAL_SWAP_STATUS)
 	{
 		bool result = CGameLogic::getInstance().checkConnect(removeGem);
-
 		if (result)
 		{
-			removeGem.clear();
-			spData.clear();
-			GemsInfo.clear();
 			CGameLogic::getInstance().ObtainSpecialGems(GemsInfo, removeGem, spData);
 			sendRemoveData(removeGem,spData,GemsInfo);
 		}
@@ -121,9 +120,6 @@ void ChessboardLayer::swapGem(swapGemStatus status) {
 	else if (status == SPECIAL_SWAP_STATUS) 
 	{
 		CCLOG("SPECIAL_SWAP_STATUS");
-		removeGem.clear();
-		spData.clear();
-		GemsInfo.clear();
 		CGameLogic::getInstance().swapSpecialGem(removeGem, GemsInfo, spData);
 
 // 		TCHAR str[256] = { 0 };
@@ -333,6 +329,10 @@ void ChessboardLayer::sendRemoveData(std::vector<Vec2> &gem, SpecialBrickData &s
 	CGameLogic::getInstance().touchSpecialGems(gem, stumbling, info);
 	std::vector<Vec2> point;
 	point.clear();
+	for each (tagSpecialBrickData data in stumbling)
+	{
+		point.push_back(Vec2(data.indexX, data.indexY));
+	}
 	_roleLayer->removeRoleData(gem, point);
 	_roleLayer->setSpecialRoleData(info);
 	changeTargetNumber(CGameLogic::getInstance().getCurrentSuccessCondition());

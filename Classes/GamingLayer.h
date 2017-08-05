@@ -27,6 +27,9 @@ public:
 	virtual void setLayerData(const PBaseData &data);
 	virtual void removeLayerData(const PBaseData &data);
 
+	tagBaseData* getData(int indexX, int indexY);
+	SpriteNode* getSpriteNode(int indexX, int indexY);
+
 public:
 	void setDelegator(GamingDelegator *delegator) { _delegator = delegator; }
 

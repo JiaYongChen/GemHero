@@ -61,3 +61,27 @@ void CGamingLayer::setLayerData(const PBaseData &data)
 void CGamingLayer::removeLayerData(const PBaseData &data){
 
 }
+
+tagBaseData* CGamingLayer::getData(int indexX, int indexY) {
+	for (auto sprite : _data)
+	{
+		if (sprite->getSpriteNodeIndex().x == indexX && sprite->getSpriteNodeIndex().y == indexY)
+		{
+			return (sprite->getData());
+		}
+	}
+
+	return nullptr;
+}
+
+SpriteNode* CGamingLayer::getSpriteNode(int indexX, int indexY) {
+	for (auto sprite : _data)
+	{
+		if (sprite->getData()->indexX == indexX && sprite->getData()->indexY == indexY)
+		{
+			return &*(sprite);
+		}
+	}
+
+	return nullptr;
+}

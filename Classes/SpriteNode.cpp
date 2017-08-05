@@ -1,5 +1,6 @@
 #include "SpriteNode.h"
 #include "Resource.h"
+#include <boost/lexical_cast.hpp>
 
 USING_NS_CC;
 
@@ -36,27 +37,19 @@ bool SpriteNode::initWithData(const std::string& name, tagBaseData* data) {
 
 	this->addChild(_spriteNode);
 
-	_indexText = Label::createWithSystemFont("", "", 12);
-	_indexText->setPosition(Vec2(0, 21));
-	_indexText->setAlignment(TextHAlignment::LEFT, TextVAlignment::CENTER);
-	this->addChild(_indexText, 1);
-
-	setIndexText();
+// 	_indexText = Label::createWithSystemFont("", "", 12);
+// 	_indexText->setPosition(Vec2(0, 21));
+// 	_indexText->setAlignment(TextHAlignment::LEFT, TextVAlignment::CENTER);
+// 	this->addChild(_indexText, 1);
+// 
+// 	setIndexText();
 	return true;
 }
 
 void SpriteNode::setData(tagBaseData* data) {
-// 	if (this->_data->parentType == STUMBLING_BLOCK_PARENT_TYPE)
-// 	{
-// 		_data->indexX = data->indexX;
-// 		_data->indexY = data->indexY;
-// 	}
-// 	else
-	{
-		_data = data;
-	}
+	_data = data;
 
-	setIndexText();
+	//setIndexText();
 }
 
 void SpriteNode::setIndexText() {
@@ -175,8 +168,6 @@ bool GemSprite::initWithData(const std::string& name, tagBaseData* data) {
 	}
 	_gemStatus = mapData->gemStatus;
 	_gemStatusLable = Label::createWithSystemFont("", "", 15);
-	_gemStatusLable->setWidth(61);
-	_gemStatusLable->setHeight(25);
 	_gemStatusLable->setAlignment(TextHAlignment::CENTER, TextVAlignment::CENTER);
 	this->addChild(_gemStatusLable,1);
 
@@ -244,7 +235,7 @@ void GemSprite::setGemStatus(GemStatus status) {
 
 //////////////////////////////////////////////////////////////////////////
 StumblingSprite::StumblingSprite() {
-
+	_stumblingAttribute = NULL;
 }
 
 StumblingSprite::~StumblingSprite() {
@@ -257,12 +248,37 @@ bool StumblingSprite::init() {
 		return false;
 	}
 
+	_stumblingAttribute = Label::createWithSystemFont("", "", 15);
+	_stumblingAttribute->setWidth(61);
+	_stumblingAttribute->setHeight(25);
+	_stumblingAttribute->setAlignment(TextHAlignment::CENTER, TextVAlignment::CENTER);
+	_stumblingAttribute->setVisible(false);
+	this->addChild(_stumblingAttribute, 1);
+
 	return true;
 }
 
 bool StumblingSprite::initWithData(const std::string& name, tagBaseData* data) {
-
+	
 	tagSpecialBrickData *mapData = (tagSpecialBrickData*)data;
+
+	if (mapData->childType == STUMBLING_BLOCK_PORTAL)
+	{
+		std::string attributeText;
+		attributeText = boost::lexical_cast<std::string>(unsigned char(mapData->attribute+64));
+		_stumblingAttribute->setString(attributeText);
+		_stumblingAttribute->setVisible(true);
+		if (mapData->direction == UP_DIRECTION)
+		{
+			_stumblingAttribute->setPosition(Vec2(0, 21));
+		}
+		else {
+			_stumblingAttribute->setPosition(Vec2(0, -21));
+		}
+		_data = data;
+		return true;
+	}
+
 	if (SpriteNode::initWithData(name, (mapData)) == false)
 	{
 		return false;

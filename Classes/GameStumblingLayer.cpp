@@ -37,7 +37,7 @@ void CGameStumblingLayer::setLayerData(const PBaseData &data) {
 
 	for (auto pData : data)
 	{
-		if (pData->childType <= GEM_COLOR_NO || pData->childType >= GEM_COLOR_COUNT)
+		if (pData->childType <= STUMBLING_BLOCK_NULL || pData->childType >= STUMBLING_BLOCK_COUNT)
 		{
 			continue;
 		}
@@ -75,7 +75,7 @@ void CGameStumblingLayer::setLayerData(const PBaseData &data) {
 		StumblingSprite* node = StumblingSprite::create();
 		if (node->initWithData(name, pData) == false) continue;
 		node->setAnchorPoint(Vec2::ANCHOR_TOP_LEFT);
-		node->setPosition(offserW + pData->indexY * node->getSpriteNodeWidth() + node->getSpriteNodeWidth() / 2, offsetH - pData->indexX * node->getSpriteNodeHeight() - node->getSpriteNodeHeight() / 2);
+		node->setPosition(offserW + pData->indexY * 61 + 61 / 2, offsetH - pData->indexX * 61 - 61 / 2);
 		this->addChild(node);
 
 		_data.push_back(node);
@@ -83,7 +83,25 @@ void CGameStumblingLayer::setLayerData(const PBaseData &data) {
 }
 
 void CGameStumblingLayer::removeLayerData(const PBaseData &data) {
-
+	for (auto pData : data)
+	{
+		std::vector<SpriteNode*>::iterator ite = _data.begin();
+		do
+		{
+			SpriteNode *sprite = *ite;
+			if (sprite->getSpriteNodeIndex().x == pData->indexX && sprite->getSpriteNodeIndex().y == pData->indexY)
+			{
+				sprite->runAction(Sequence::create(Blink::create(0.3f, 3), CallFunc::create([this, sprite]() {
+					this->removeChild(sprite);
+					auto ite = std::find(_data.begin(), _data.end(), sprite);
+					_data.erase(ite);
+				}), nullptr));
+				sprite->getData()->childType = STUMBLING_BLOCK_NULL;
+				sprite->setRunAction(true);
+			}
+			++ite;
+		} while (ite != _data.end());
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -105,7 +123,7 @@ bool CGameDownStumblingLayer::init() {
 }
 
 void CGameDownStumblingLayer::removeLayerData(const PBaseData &data) {
-
+	CGameStumblingLayer::removeLayerData(data);
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -127,5 +145,5 @@ bool CGameUpStumblingLayer::init() {
 }
 
 void CGameUpStumblingLayer::removeLayerData(const PBaseData &data) {
-
+	CGameStumblingLayer::removeLayerData(data);
 }

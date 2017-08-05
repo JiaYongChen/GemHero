@@ -22,8 +22,6 @@ public:
 	virtual void update(float delta);
 	virtual void setLayerData(const PBaseData &data);
 	virtual void removeLayerData(const PBaseData &data);
-	tagGemData* getGemData(int indexX, int indexY);
-	SpriteNode* getSpriteNode(int indexX, int indexY);
 
 private:
 	void setGemMove(int indexX, int indexY, enRunAction action);
