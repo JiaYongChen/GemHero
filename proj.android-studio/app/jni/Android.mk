@@ -21,6 +21,9 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes
 
 LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static cocosdenshion_static cocos_extension_static
 
+LOCAL_WHOLE_STATIC_LIBRARIES += boost_system
+LOCAL_WHOLE_STATIC_LIBRARIES += boost_serialization
+
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
 
@@ -33,6 +36,7 @@ LOCAL_STATIC_LIBRARIES := cocos2dx_static
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,.)
+$(call import-module, boost_1_64_0)
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
 # _COCOS_LIB_IMPORT_ANDROID_END

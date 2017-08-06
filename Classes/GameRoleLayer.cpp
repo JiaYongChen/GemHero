@@ -221,7 +221,7 @@ void CGameGemLayer::update(float delta) {
 						}
 					}
 					this->setLayerData(pdata);
-					for each (tagBaseData *basedata in pdata)
+					for (tagBaseData *basedata : pdata)
 					{
 						SpriteNode* node =  getSpriteNode(basedata->indexX, basedata->indexY);
 						if (node != nullptr)

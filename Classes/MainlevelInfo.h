@@ -18,14 +18,14 @@ public:
 	//初始化关卡信息
 	void initLevelInfo(int index,int number = LEVELNUMBER);
 	//获取levelList
-	cocos2d::Array& getLevelList() { return _levelList; }
+	cocos2d::__Array& getLevelList() { return _levelList; }
 
 protected:
 	virtual bool init();
 
 private:
 	cocos2d::Node* _levelInfo;
-	cocos2d::Array _levelList;
+	cocos2d::__Array _levelList;
 
 	CC_SYNTHESIZE(int, _Index, Index);
 };

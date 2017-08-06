@@ -329,7 +329,7 @@ void ChessboardLayer::sendRemoveData(std::vector<Vec2> &gem, SpecialBrickData &s
 	CGameLogic::getInstance().touchSpecialGems(gem, stumbling, info);
 	std::vector<Vec2> point;
 	point.clear();
-	for each (tagSpecialBrickData data in stumbling)
+	for (tagSpecialBrickData data : stumbling)
 	{
 		point.push_back(Vec2(data.indexX, data.indexY));
 	}

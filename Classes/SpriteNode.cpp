@@ -265,7 +265,7 @@ bool StumblingSprite::initWithData(const std::string& name, tagBaseData* data) {
 	if (mapData->childType == STUMBLING_BLOCK_PORTAL)
 	{
 		std::string attributeText;
-		attributeText = boost::lexical_cast<std::string>(unsigned char(mapData->attribute+64));
+		attributeText = boost::lexical_cast<std::string>((unsigned char)(mapData->attribute+64));
 		_stumblingAttribute->setString(attributeText);
 		_stumblingAttribute->setVisible(true);
 		if (mapData->direction == UP_DIRECTION)
