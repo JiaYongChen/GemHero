@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>res/gameResult/cry.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,721},{248,190}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{248,190}</string>
+			</dict>
+			<key>res/gameResult/failed.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,969},{168,40}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{168,40}</string>
+			</dict>
+			<key>res/gameResult/gold.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{419,560},{45,43}}</string>
+				<key>offset</key>
+				<string>{1,-1}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{61,61}</string>
+			</dict>
+			<key>res/gameResult/jgbg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{592,482}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{592,482}</string>
+			</dict>
+			<key>res/gameResult/jiangli.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{992,362},{59,23}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{59,23}</string>
+			</dict>
+			<key>res/gameResult/jiangliBack.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{467,482},{80,93}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{80,93}</string>
+			</dict>
+			<key>res/gameResult/starbg.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{335,560},{84,81}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{84,81}</string>
+			</dict>
+			<key>res/gameResult/starstar.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,641},{74,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{84,81}</string>
+			</dict>
+			<key>res/gameResult/success.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{168,969},{167,40}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{167,40}</string>
+			</dict>
+			<key>res/addStep/back.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{592,362},{400,359}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{400,359}</string>
+			</dict>
+			<key>res/addStep/tips.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{335,482},{132,78}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{132,78}</string>
+			</dict>
+			<key>res/buyProp/back.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{592,0},{424,362}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{424,362}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>gameResult.png</string>
+			<key>realTextureFileName</key>
+			<string>gameResult.png</string>
+			<key>size</key>
+			<string>{1016,1009}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1016</integer>
+			<key>height</key>
+			<integer>1009</integer>
+		</dict>
+	</dict>
+</plist>

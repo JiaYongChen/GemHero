@@ -1,0 +1,620 @@
+<Solution>
+  <PropertyGroup Name="GemHero" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="config">
+          <File Name="imageName.ini" />
+          <File Name="Prop.xml" />
+        </Folder>
+        <Folder Name="fnt">
+          <Fnt Name="5_more_cd@2x.fnt" />
+          <Fnt Name="backward@2x.fnt" />
+          <Fnt Name="bling@2x.fnt" />
+          <Fnt Name="blue_button@2x.fnt" />
+          <Fnt Name="caption@2x.fnt" />
+          <Fnt Name="cashshop@2x.fnt" />
+          <Fnt Name="energy_cd@2x.fnt" />
+          <Fnt Name="event_default_digits@2x.fnt" />
+          <Fnt Name="game_scores@2x.fnt" />
+          <Fnt Name="green_button@2x.fnt" />
+          <Fnt Name="hud@2x.fnt" />
+          <Fnt Name="level_seq_n_energy_cd@2x.fnt" />
+          <Fnt Name="level_seq_upon_entering@2x.fnt" />
+          <Fnt Name="loading_button@2x.fnt" />
+          <Fnt Name="nametag@2x.fnt" />
+          <Fnt Name="objectives@2x.fnt" />
+          <Fnt Name="prop_amount@2x.fnt" />
+          <Fnt Name="rising_score@2x.fnt" />
+          <Fnt Name="score_objectives@2x.fnt" />
+          <Fnt Name="steps_cd@2x.fnt" />
+          <Fnt Name="store_title@2x.fnt" />
+          <Fnt Name="target_amount@2x.fnt" />
+          <Fnt Name="titles@2x.fnt" />
+          <Fnt Name="tutorial@2x.fnt" />
+        </Folder>
+        <Folder Name="GameScene">
+          <Folder Name="gameEnd">
+            <Project Name="failed.csd" Type="Node" />
+            <Project Name="gameEnd.csd" Type="Node" />
+            <Project Name="successed.csd" Type="Node" />
+          </Folder>
+          <Folder Name="UI">
+            <Project Name="target.csd" Type="Node" />
+            <Project Name="targetNode.csd" Type="Node" />
+            <Project Name="UILayer.csd" Type="Layer" />
+          </Folder>
+          <Project Name="GameScene.csd" Type="Scene" />
+        </Folder>
+        <Folder Name="MainScene">
+          <Folder Name="chessGate">
+            <Project Name="chooseLevel.csd" Type="Node" />
+            <Project Name="levelType1.csd" Type="Node" />
+            <Project Name="levelType2.csd" Type="Node" />
+            <Project Name="levelType3.csd" Type="Node" />
+          </Folder>
+          <Folder Name="GateListLayer">
+            <Project Name="Gate.csd" Type="Node" />
+            <Project Name="GateList.csd" Type="Node" />
+            <Project Name="GateListLayer.csd" Type="Layer" />
+          </Folder>
+          <Project Name="MainScene.csd" Type="Scene" />
+        </Folder>
+        <Folder Name="map">
+          <File Name="0.data" />
+          <File Name="1.data" />
+          <File Name="10.data" />
+          <File Name="100.data" />
+          <File Name="11.data" />
+          <File Name="12.data" />
+          <File Name="13.data" />
+          <File Name="14.data" />
+          <File Name="15.data" />
+          <File Name="16.data" />
+          <File Name="17.data" />
+          <File Name="18.data" />
+          <File Name="19.data" />
+          <File Name="2.data" />
+          <File Name="20.data" />
+          <File Name="21.data" />
+          <File Name="22.data" />
+          <File Name="23.data" />
+          <File Name="24.data" />
+          <File Name="25.data" />
+          <File Name="26.data" />
+          <File Name="27.data" />
+          <File Name="28.data" />
+          <File Name="29.data" />
+          <File Name="3.data" />
+          <File Name="30.data" />
+          <File Name="31.data" />
+          <File Name="32.data" />
+          <File Name="33.data" />
+          <File Name="34.data" />
+          <File Name="35.data" />
+          <File Name="36.data" />
+          <File Name="37.data" />
+          <File Name="38.data" />
+          <File Name="39.data" />
+          <File Name="4.data" />
+          <File Name="40.data" />
+          <File Name="41.data" />
+          <File Name="42.data" />
+          <File Name="43.data" />
+          <File Name="44.data" />
+          <File Name="45.data" />
+          <File Name="46.data" />
+          <File Name="47.data" />
+          <File Name="48.data" />
+          <File Name="49.data" />
+          <File Name="5.data" />
+          <File Name="50.data" />
+          <File Name="51.data" />
+          <File Name="52.data" />
+          <File Name="53.data" />
+          <File Name="54.data" />
+          <File Name="55.data" />
+          <File Name="56.data" />
+          <File Name="57.data" />
+          <File Name="58.data" />
+          <File Name="59.data" />
+          <File Name="6.data" />
+          <File Name="60.data" />
+          <File Name="61.data" />
+          <File Name="62.data" />
+          <File Name="63.data" />
+          <File Name="64.data" />
+          <File Name="65.data" />
+          <File Name="66.data" />
+          <File Name="67.data" />
+          <File Name="68.data" />
+          <File Name="69.data" />
+          <File Name="7.data" />
+          <File Name="70.data" />
+          <File Name="71.data" />
+          <File Name="72.data" />
+          <File Name="73.data" />
+          <File Name="74.data" />
+          <File Name="75.data" />
+          <File Name="76.data" />
+          <File Name="77.data" />
+          <File Name="78.data" />
+          <File Name="79.data" />
+          <File Name="8.data" />
+          <File Name="80.data" />
+          <File Name="81.data" />
+          <File Name="82.data" />
+          <File Name="83.data" />
+          <File Name="84.data" />
+          <File Name="85.data" />
+          <File Name="86.data" />
+          <File Name="87.data" />
+          <File Name="88.data" />
+          <File Name="89.data" />
+          <File Name="9.data" />
+          <File Name="90.data" />
+          <File Name="91.data" />
+          <File Name="92.data" />
+          <File Name="93.data" />
+          <File Name="94.data" />
+          <File Name="95.data" />
+          <File Name="96.data" />
+          <File Name="97.data" />
+          <File Name="98.data" />
+          <File Name="99.data" />
+        </Folder>
+        <Folder Name="plist">
+          <PlistImageFolder Image="button.png" PListFile="button.plist" Name=".button_PList.Dir">
+            <PlistImageFile Name="res_btn_an_an1.png" Key="res/btn/an/an1.png" />
+            <PlistImageFile Name="res_btn_an_an10.png" Key="res/btn/an/an10.png" />
+            <PlistImageFile Name="res_btn_an_an11.png" Key="res/btn/an/an11.png" />
+            <PlistImageFile Name="res_btn_an_an12.png" Key="res/btn/an/an12.png" />
+            <PlistImageFile Name="res_btn_an_an13.png" Key="res/btn/an/an13.png" />
+            <PlistImageFile Name="res_btn_an_an14.png" Key="res/btn/an/an14.png" />
+            <PlistImageFile Name="res_btn_an_an15.png" Key="res/btn/an/an15.png" />
+            <PlistImageFile Name="res_btn_an_an16.png" Key="res/btn/an/an16.png" />
+            <PlistImageFile Name="res_btn_an_an17.png" Key="res/btn/an/an17.png" />
+            <PlistImageFile Name="res_btn_an_an2.png" Key="res/btn/an/an2.png" />
+            <PlistImageFile Name="res_btn_an_an3.png" Key="res/btn/an/an3.png" />
+            <PlistImageFile Name="res_btn_an_an4.png" Key="res/btn/an/an4.png" />
+            <PlistImageFile Name="res_btn_an_an5.png" Key="res/btn/an/an5.png" />
+            <PlistImageFile Name="res_btn_an_an6.png" Key="res/btn/an/an6.png" />
+            <PlistImageFile Name="res_btn_an_an7.png" Key="res/btn/an/an7.png" />
+            <PlistImageFile Name="res_btn_an_an8.png" Key="res/btn/an/an8.png" />
+            <PlistImageFile Name="res_btn_an_an9.png" Key="res/btn/an/an9.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan1.png" Key="res/btn/cyan/cyan1.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan10.png" Key="res/btn/cyan/cyan10.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan11.png" Key="res/btn/cyan/cyan11.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan12.png" Key="res/btn/cyan/cyan12.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan13.png" Key="res/btn/cyan/cyan13.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan14.png" Key="res/btn/cyan/cyan14.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan15.png" Key="res/btn/cyan/cyan15.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan16.png" Key="res/btn/cyan/cyan16.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan17.png" Key="res/btn/cyan/cyan17.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan2.png" Key="res/btn/cyan/cyan2.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan3.png" Key="res/btn/cyan/cyan3.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan4.png" Key="res/btn/cyan/cyan4.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan5.png" Key="res/btn/cyan/cyan5.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan6.png" Key="res/btn/cyan/cyan6.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan7.png" Key="res/btn/cyan/cyan7.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan8.png" Key="res/btn/cyan/cyan8.png" />
+            <PlistImageFile Name="res_btn_cyan_cyan9.png" Key="res/btn/cyan/cyan9.png" />
+            <PlistImageFile Name="res_btn_light_light.png" Key="res/btn/light/light.png" />
+            <PlistImageFile Name="res_btn_light_light10.png" Key="res/btn/light/light10.png" />
+            <PlistImageFile Name="res_btn_light_light11.png" Key="res/btn/light/light11.png" />
+            <PlistImageFile Name="res_btn_light_light12.png" Key="res/btn/light/light12.png" />
+            <PlistImageFile Name="res_btn_light_light13.png" Key="res/btn/light/light13.png" />
+            <PlistImageFile Name="res_btn_light_light14.png" Key="res/btn/light/light14.png" />
+            <PlistImageFile Name="res_btn_light_light15.png" Key="res/btn/light/light15.png" />
+            <PlistImageFile Name="res_btn_light_light16.png" Key="res/btn/light/light16.png" />
+            <PlistImageFile Name="res_btn_light_light17.png" Key="res/btn/light/light17.png" />
+            <PlistImageFile Name="res_btn_light_light2.png" Key="res/btn/light/light2.png" />
+            <PlistImageFile Name="res_btn_light_light3.png" Key="res/btn/light/light3.png" />
+            <PlistImageFile Name="res_btn_light_light4.png" Key="res/btn/light/light4.png" />
+            <PlistImageFile Name="res_btn_light_light5.png" Key="res/btn/light/light5.png" />
+            <PlistImageFile Name="res_btn_light_light6.png" Key="res/btn/light/light6.png" />
+            <PlistImageFile Name="res_btn_light_light7.png" Key="res/btn/light/light7.png" />
+            <PlistImageFile Name="res_btn_light_light8.png" Key="res/btn/light/light8.png" />
+            <PlistImageFile Name="res_btn_light_light9.png" Key="res/btn/light/light9.png" />
+            <PlistImageFile Name="res_btn_normal_normal1.png" Key="res/btn/normal/normal1.png" />
+            <PlistImageFile Name="res_btn_normal_normal10.png" Key="res/btn/normal/normal10.png" />
+            <PlistImageFile Name="res_btn_normal_normal11.png" Key="res/btn/normal/normal11.png" />
+            <PlistImageFile Name="res_btn_normal_normal12.png" Key="res/btn/normal/normal12.png" />
+            <PlistImageFile Name="res_btn_normal_normal13.png" Key="res/btn/normal/normal13.png" />
+            <PlistImageFile Name="res_btn_normal_normal14.png" Key="res/btn/normal/normal14.png" />
+            <PlistImageFile Name="res_btn_normal_normal15.png" Key="res/btn/normal/normal15.png" />
+            <PlistImageFile Name="res_btn_normal_normal16.png" Key="res/btn/normal/normal16.png" />
+            <PlistImageFile Name="res_btn_normal_normal17.png" Key="res/btn/normal/normal17.png" />
+            <PlistImageFile Name="res_btn_normal_normal2.png" Key="res/btn/normal/normal2.png" />
+            <PlistImageFile Name="res_btn_normal_normal3.png" Key="res/btn/normal/normal3.png" />
+            <PlistImageFile Name="res_btn_normal_normal4.png" Key="res/btn/normal/normal4.png" />
+            <PlistImageFile Name="res_btn_normal_normal5.png" Key="res/btn/normal/normal5.png" />
+            <PlistImageFile Name="res_btn_normal_normal6.png" Key="res/btn/normal/normal6.png" />
+            <PlistImageFile Name="res_btn_normal_normal7.png" Key="res/btn/normal/normal7.png" />
+            <PlistImageFile Name="res_btn_normal_normal8.png" Key="res/btn/normal/normal8.png" />
+            <PlistImageFile Name="res_btn_normal_normal9.png" Key="res/btn/normal/normal9.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="chessGate.png" PListFile="chessGate.plist" Name=".chessGate_PList.Dir">
+            <PlistImageFile Name="res_bag_bagbg.png" Key="res/bag/bagbg.png" />
+            <PlistImageFile Name="res_bag_locker.png" Key="res/bag/locker.png" />
+            <PlistImageFile Name="res_buyStrength_bctl.png" Key="res/buyStrength/bctl.png" />
+            <PlistImageFile Name="res_buyStrength_bottle.png" Key="res/buyStrength/bottle.png" />
+            <PlistImageFile Name="res_buyStrength_mytll.png" Key="res/buyStrength/mytll.png" />
+            <PlistImageFile Name="res_buyStrength_tlbg.png" Key="res/buyStrength/tlbg.png" />
+            <PlistImageFile Name="res_chessGate_cellect.png" Key="res/chessGate/cellect.png" />
+            <PlistImageFile Name="res_chessGate_cellectT.png" Key="res/chessGate/cellectT.png" />
+            <PlistImageFile Name="res_chessGate_gqxzbg.png" Key="res/chessGate/gqxzbg.png" />
+            <PlistImageFile Name="res_chessGate_noTop.png" Key="res/chessGate/noTop.png" />
+            <PlistImageFile Name="res_chessGate_phbt.png" Key="res/chessGate/phbt.png" />
+            <PlistImageFile Name="res_chessGate_prop.png" Key="res/chessGate/prop.png" />
+            <PlistImageFile Name="res_chessGate_time.png" Key="res/chessGate/time.png" />
+            <PlistImageFile Name="res_chessGate_timeT.png" Key="res/chessGate/timeT.png" />
+            <PlistImageFile Name="res_chessGate_xiaochu.png" Key="res/chessGate/xiaochu.png" />
+            <PlistImageFile Name="res_chessGate_xiaochuT.png" Key="res/chessGate/xiaochuT.png" />
+            <PlistImageFile Name="res_top_bg.png" Key="res/top/bg.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="gameResult.png" PListFile="gameResult.plist" Name=".gameResult_PList.Dir">
+            <PlistImageFile Name="res_addStep_back.png" Key="res/addStep/back.png" />
+            <PlistImageFile Name="res_addStep_tips.png" Key="res/addStep/tips.png" />
+            <PlistImageFile Name="res_buyProp_back.png" Key="res/buyProp/back.png" />
+            <PlistImageFile Name="res_gameResult_cry.png" Key="res/gameResult/cry.png" />
+            <PlistImageFile Name="res_gameResult_failed.png" Key="res/gameResult/failed.png" />
+            <PlistImageFile Name="res_gameResult_gold.png" Key="res/gameResult/gold.png" />
+            <PlistImageFile Name="res_gameResult_jgbg.png" Key="res/gameResult/jgbg.png" />
+            <PlistImageFile Name="res_gameResult_jiangli.png" Key="res/gameResult/jiangli.png" />
+            <PlistImageFile Name="res_gameResult_jiangliBack.png" Key="res/gameResult/jiangliBack.png" />
+            <PlistImageFile Name="res_gameResult_starbg.png" Key="res/gameResult/starbg.png" />
+            <PlistImageFile Name="res_gameResult_starstar.png" Key="res/gameResult/starstar.png" />
+            <PlistImageFile Name="res_gameResult_success.png" Key="res/gameResult/success.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="gameScene.png" PListFile="gameScene.plist" Name=".gameScene_PList.Dir">
+            <PlistImageFile Name="res_gameScene_cellectGold.png" Key="res/gameScene/cellectGold.png" />
+            <PlistImageFile Name="res_gameScene_finish.png" Key="res/gameScene/finish.png" />
+            <PlistImageFile Name="res_gameScene_fkbg.png" Key="res/gameScene/fkbg.png" />
+            <PlistImageFile Name="res_gameScene_marksbg.png" Key="res/gameScene/marksbg.png" />
+            <PlistImageFile Name="res_gameScene_normal_blue.png" Key="res/gameScene/normal/blue.png" />
+            <PlistImageFile Name="res_gameScene_normal_cyan.png" Key="res/gameScene/normal/cyan.png" />
+            <PlistImageFile Name="res_gameScene_normal_green.png" Key="res/gameScene/normal/green.png" />
+            <PlistImageFile Name="res_gameScene_normal_purple.png" Key="res/gameScene/normal/purple.png" />
+            <PlistImageFile Name="res_gameScene_normal_red.png" Key="res/gameScene/normal/red.png" />
+            <PlistImageFile Name="res_gameScene_normal_yellow.png" Key="res/gameScene/normal/yellow.png" />
+            <PlistImageFile Name="res_gameScene_propBack.png" Key="res/gameScene/propBack.png" />
+            <PlistImageFile Name="res_gameScene_small_smallBlue.png" Key="res/gameScene/small/smallBlue.png" />
+            <PlistImageFile Name="res_gameScene_small_smallBulb.png" Key="res/gameScene/small/smallBulb.png" />
+            <PlistImageFile Name="res_gameScene_small_smallCyan.png" Key="res/gameScene/small/smallCyan.png" />
+            <PlistImageFile Name="res_gameScene_small_smallGlass.png" Key="res/gameScene/small/smallGlass.png" />
+            <PlistImageFile Name="res_gameScene_small_smallGold.png" Key="res/gameScene/small/smallGold.png" />
+            <PlistImageFile Name="res_gameScene_small_smallGreen.png" Key="res/gameScene/small/smallGreen.png" />
+            <PlistImageFile Name="res_gameScene_small_smallJelly.png" Key="res/gameScene/small/smallJelly.png" />
+            <PlistImageFile Name="res_gameScene_small_smallPurple.png" Key="res/gameScene/small/smallPurple.png" />
+            <PlistImageFile Name="res_gameScene_small_smallRed.png" Key="res/gameScene/small/smallRed.png" />
+            <PlistImageFile Name="res_gameScene_small_smallWood.png" Key="res/gameScene/small/smallWood.png" />
+            <PlistImageFile Name="res_gameScene_small_smallYellow.png" Key="res/gameScene/small/smallYellow.png" />
+            <PlistImageFile Name="res_gameScene_special_addFive.png" Key="res/gameScene/special/addFive.png" />
+            <PlistImageFile Name="res_gameScene_special_timeBomb.png" Key="res/gameScene/special/timeBomb.png" />
+            <PlistImageFile Name="res_gameScene_star.png" Key="res/gameScene/star.png" />
+            <PlistImageFile Name="res_gameScene_star1.png" Key="res/gameScene/star1.png" />
+            <PlistImageFile Name="res_gameScene_star1Cyan.png" Key="res/gameScene/star1Cyan.png" />
+            <PlistImageFile Name="res_gameScene_star2.png" Key="res/gameScene/star2.png" />
+            <PlistImageFile Name="res_gameScene_star2Cyan.png" Key="res/gameScene/star2Cyan.png" />
+            <PlistImageFile Name="res_gameScene_star3.png" Key="res/gameScene/star3.png" />
+            <PlistImageFile Name="res_gameScene_star3Cyan.png" Key="res/gameScene/star3Cyan.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_bulb.png" Key="res/gameScene/strumbling/bulb.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_coin.png" Key="res/gameScene/strumbling/coin.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_glass.png" Key="res/gameScene/strumbling/glass.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_gold.png" Key="res/gameScene/strumbling/gold.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_jelly.png" Key="res/gameScene/strumbling/jelly.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_partition1.png" Key="res/gameScene/strumbling/partition1.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_partition2.png" Key="res/gameScene/strumbling/partition2.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_partition3.png" Key="res/gameScene/strumbling/partition3.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_partition4.png" Key="res/gameScene/strumbling/partition4.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_stencil.png" Key="res/gameScene/strumbling/stencil.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_wood1.png" Key="res/gameScene/strumbling/wood1.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_wood2.png" Key="res/gameScene/strumbling/wood2.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_wood3.png" Key="res/gameScene/strumbling/wood3.png" />
+            <PlistImageFile Name="res_gameScene_strumbling_wood4.png" Key="res/gameScene/strumbling/wood4.png" />
+            <PlistImageFile Name="res_gameScene_targetBack.png" Key="res/gameScene/targetBack.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="mainScene.png" PListFile="mainScene.plist" Name=".mainScene_PList.Dir">
+            <PlistImageFile Name="res_mainScene_btnbag.png" Key="res/mainScene/btnbag.png" />
+            <PlistImageFile Name="res_mainScene_btnhelp.png" Key="res/mainScene/btnhelp.png" />
+            <PlistImageFile Name="res_mainScene_btnshop.png" Key="res/mainScene/btnshop.png" />
+            <PlistImageFile Name="res_mainScene_btntop.png" Key="res/mainScene/btntop.png" />
+            <PlistImageFile Name="res_mainScene_gq.png" Key="res/mainScene/gq.png" />
+            <PlistImageFile Name="res_mainScene_gqlock.png" Key="res/mainScene/gqlock.png" />
+            <PlistImageFile Name="res_mainScene_hp.png" Key="res/mainScene/hp.png" />
+            <PlistImageFile Name="res_mainScene_hpbg.png" Key="res/mainScene/hpbg.png" />
+            <PlistImageFile Name="res_mainScene_I.png" Key="res/mainScene/I.png" />
+            <PlistImageFile Name="res_mainScene_moneybg.png" Key="res/mainScene/moneybg.png" />
+            <PlistImageFile Name="res_mainScene_numbers.png" Key="res/mainScene/numbers.png" />
+            <PlistImageFile Name="res_mainScene_progress.png" Key="res/mainScene/progress.png" />
+            <PlistImageFile Name="res_mainScene_road.png" Key="res/mainScene/road.png" />
+            <PlistImageFile Name="res_mainScene_road2.png" Key="res/mainScene/road2.png" />
+            <PlistImageFile Name="res_mainScene_road3.png" Key="res/mainScene/road3.png" />
+            <PlistImageFile Name="res_mainScene_road4.png" Key="res/mainScene/road4.png" />
+            <PlistImageFile Name="res_mainScene_road5.png" Key="res/mainScene/road5.png" />
+            <PlistImageFile Name="res_mainScene_road6.png" Key="res/mainScene/road6.png" />
+            <PlistImageFile Name="res_mainScene_soundoff.png" Key="res/mainScene/soundoff.png" />
+            <PlistImageFile Name="res_mainScene_soundon.png" Key="res/mainScene/soundon.png" />
+            <PlistImageFile Name="res_mainScene_STAR.png" Key="res/mainScene/STAR.png" />
+            <PlistImageFile Name="res_mainScene_starbag.png" Key="res/mainScene/starbag.png" />
+            <PlistImageFile Name="res_mainScene_starbagbg.png" Key="res/mainScene/starbagbg.png" />
+            <PlistImageFile Name="res_mainScene_yun.png" Key="res/mainScene/yun.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="shop.png" PListFile="shop.plist" Name=".shop_PList.Dir">
+            <PlistImageFile Name="res_prop_addFive.png" Key="res/prop/addFive.png" />
+            <PlistImageFile Name="res_prop_change.png" Key="res/prop/change.png" />
+            <PlistImageFile Name="res_prop_goBack.png" Key="res/prop/goBack.png" />
+            <PlistImageFile Name="res_prop_hammer.png" Key="res/prop/hammer.png" />
+            <PlistImageFile Name="res_prop_rearrange.png" Key="res/prop/rearrange.png" />
+            <PlistImageFile Name="res_prop_swapGem.png" Key="res/prop/swapGem.png" />
+            <PlistImageFile Name="res_shop_allItem.png" Key="res/shop/allItem.png" />
+            <PlistImageFile Name="res_shop_allItem2.png" Key="res/shop/allItem2.png" />
+            <PlistImageFile Name="res_shop_buyBack.png" Key="res/shop/buyBack.png" />
+            <PlistImageFile Name="res_shop_hotItem.png" Key="res/shop/hotItem.png" />
+            <PlistImageFile Name="res_shop_hotItem2.png" Key="res/shop/hotItem2.png" />
+            <PlistImageFile Name="res_shop_itemBack.png" Key="res/shop/itemBack.png" />
+            <PlistImageFile Name="res_shop_SHOPBG.png" Key="res/shop/SHOPBG.png" />
+            <PlistImageFile Name="res_shop_tips.png" Key="res/shop/tips.png" />
+            <PlistImageFile Name="res_shop_zheko.png" Key="res/shop/zheko.png" />
+            <PlistImageFile Name="res_shop_zheko2.png" Key="res/shop/zheko2.png" />
+            <PlistImageFile Name="res_zhekou_1.png" Key="res/zhekou/1.png" />
+            <PlistImageFile Name="res_zhekou_2.png" Key="res/zhekou/2.png" />
+            <PlistImageFile Name="res_zhekou_3.png" Key="res/zhekou/3.png" />
+            <PlistImageFile Name="res_zhekou_4.png" Key="res/zhekou/4.png" />
+            <PlistImageFile Name="res_zhekou_5.png" Key="res/zhekou/5.png" />
+            <PlistImageFile Name="res_zhekou_6.png" Key="res/zhekou/6.png" />
+            <PlistImageFile Name="res_zhekou_7.png" Key="res/zhekou/7.png" />
+            <PlistImageFile Name="res_zhekou_8.png" Key="res/zhekou/8.png" />
+            <PlistImageFile Name="res_zhekou_9.png" Key="res/zhekou/9.png" />
+          </PlistImageFolder>
+        </Folder>
+        <Folder Name="res">
+          <Folder Name="addStep">
+            <Image Name="back.png" />
+            <Image Name="tips.png" />
+          </Folder>
+          <Folder Name="bag">
+            <Image Name="bagbg.png" />
+            <Image Name="locker.png" />
+          </Folder>
+          <Folder Name="btn">
+            <Folder Name="an">
+              <Image Name="an1.png" />
+              <Image Name="an10.png" />
+              <Image Name="an11.png" />
+              <Image Name="an12.png" />
+              <Image Name="an13.png" />
+              <Image Name="an14.png" />
+              <Image Name="an15.png" />
+              <Image Name="an16.png" />
+              <Image Name="an17.png" />
+              <Image Name="an2.png" />
+              <Image Name="an3.png" />
+              <Image Name="an4.png" />
+              <Image Name="an5.png" />
+              <Image Name="an6.png" />
+              <Image Name="an7.png" />
+              <Image Name="an8.png" />
+              <Image Name="an9.png" />
+            </Folder>
+            <Folder Name="cyan">
+              <Image Name="cyan1.png" />
+              <Image Name="cyan10.png" />
+              <Image Name="cyan11.png" />
+              <Image Name="cyan12.png" />
+              <Image Name="cyan13.png" />
+              <Image Name="cyan14.png" />
+              <Image Name="cyan15.png" />
+              <Image Name="cyan16.png" />
+              <Image Name="cyan17.png" />
+              <Image Name="cyan2.png" />
+              <Image Name="cyan3.png" />
+              <Image Name="cyan4.png" />
+              <Image Name="cyan5.png" />
+              <Image Name="cyan6.png" />
+              <Image Name="cyan7.png" />
+              <Image Name="cyan8.png" />
+              <Image Name="cyan9.png" />
+            </Folder>
+            <Folder Name="light">
+              <Image Name="light.png" />
+              <Image Name="light10.png" />
+              <Image Name="light11.png" />
+              <Image Name="light12.png" />
+              <Image Name="light13.png" />
+              <Image Name="light14.png" />
+              <Image Name="light15.png" />
+              <Image Name="light16.png" />
+              <Image Name="light17.png" />
+              <Image Name="light2.png" />
+              <Image Name="light3.png" />
+              <Image Name="light4.png" />
+              <Image Name="light5.png" />
+              <Image Name="light6.png" />
+              <Image Name="light7.png" />
+              <Image Name="light8.png" />
+              <Image Name="light9.png" />
+            </Folder>
+            <Folder Name="normal">
+              <Image Name="normal1.png" />
+              <Image Name="normal10.png" />
+              <Image Name="normal11.png" />
+              <Image Name="normal12.png" />
+              <Image Name="normal13.png" />
+              <Image Name="normal14.png" />
+              <Image Name="normal15.png" />
+              <Image Name="normal16.png" />
+              <Image Name="normal17.png" />
+              <Image Name="normal2.png" />
+              <Image Name="normal3.png" />
+              <Image Name="normal4.png" />
+              <Image Name="normal5.png" />
+              <Image Name="normal6.png" />
+              <Image Name="normal7.png" />
+              <Image Name="normal8.png" />
+              <Image Name="normal9.png" />
+            </Folder>
+          </Folder>
+          <Folder Name="buyProp">
+            <Image Name="back.png" />
+          </Folder>
+          <Folder Name="buyStrength">
+            <Image Name="bctl.png" />
+            <Image Name="bottle.png" />
+            <Image Name="mytll.png" />
+            <Image Name="tlbg.png" />
+          </Folder>
+          <Folder Name="chessGate">
+            <Image Name="cellect.png" />
+            <Image Name="cellectT.png" />
+            <Image Name="gqxzbg.png" />
+            <Image Name="noTop.png" />
+            <Image Name="phbt.png" />
+            <Image Name="prop.png" />
+            <Image Name="time.png" />
+            <Image Name="timeT.png" />
+            <Image Name="xiaochu.png" />
+            <Image Name="xiaochuT.png" />
+          </Folder>
+          <Folder Name="gameResult">
+            <Image Name="cry.png" />
+            <Image Name="failed.png" />
+            <Image Name="gold.png" />
+            <Image Name="jgbg.png" />
+            <Image Name="jiangli.png" />
+            <Image Name="jiangliBack.png" />
+            <Image Name="starbg.png" />
+            <Image Name="starstar.png" />
+            <Image Name="success.png" />
+          </Folder>
+          <Folder Name="gameScene">
+            <Folder Name="normal">
+              <Image Name="blue.png" />
+              <Image Name="cyan.png" />
+              <Image Name="green.png" />
+              <Image Name="purple.png" />
+              <Image Name="red.png" />
+              <Image Name="Water.png" />
+              <Image Name="yellow.png" />
+            </Folder>
+            <Folder Name="small">
+              <Image Name="smallBlue.png" />
+              <Image Name="smallBulb.png" />
+              <Image Name="smallCyan.png" />
+              <Image Name="smallGlass.png" />
+              <Image Name="smallGold.png" />
+              <Image Name="smallGreen.png" />
+              <Image Name="smallJelly.png" />
+              <Image Name="smallPurple.png" />
+              <Image Name="smallRed.png" />
+              <Image Name="smallWater.png" />
+              <Image Name="smallWood.png" />
+              <Image Name="smallYellow.png" />
+            </Folder>
+            <Folder Name="special">
+              <Image Name="addFive.png" />
+              <Image Name="timeBomb.png" />
+            </Folder>
+            <Folder Name="strumbling">
+              <Image Name="bulb.png" />
+              <Image Name="coin.png" />
+              <Image Name="glass.png" />
+              <Image Name="gold.png" />
+              <Image Name="jelly.png" />
+              <Image Name="partition1.png" />
+              <Image Name="partition2.png" />
+              <Image Name="partition3.png" />
+              <Image Name="partition4.png" />
+              <Image Name="stencil.png" />
+              <Image Name="wood1.png" />
+              <Image Name="wood2.png" />
+              <Image Name="wood3.png" />
+              <Image Name="wood4.png" />
+            </Folder>
+            <Image Name="cellectGold.png" />
+            <Image Name="finish.png" />
+            <Image Name="fkbg.png" />
+            <Image Name="marksbg.png" />
+            <Image Name="propBack.png" />
+            <Image Name="star.png" />
+            <Image Name="star1.png" />
+            <Image Name="star1Cyan.png" />
+            <Image Name="star2.png" />
+            <Image Name="star2Cyan.png" />
+            <Image Name="star3.png" />
+            <Image Name="star3Cyan.png" />
+            <Image Name="targetBack.png" />
+          </Folder>
+          <Folder Name="mainScene">
+            <Image Name="btnbag.png" />
+            <Image Name="btnhelp.png" />
+            <Image Name="btnshop.png" />
+            <Image Name="btntop.png" />
+            <Image Name="gq.png" />
+            <Image Name="gqlock.png" />
+            <Image Name="hp.png" />
+            <Image Name="hpbg.png" />
+            <Image Name="I.png" />
+            <Image Name="moneybg.png" />
+            <Image Name="numbers.png" />
+            <Image Name="progress.png" />
+            <Image Name="road.png" />
+            <Image Name="road2.png" />
+            <Image Name="road3.png" />
+            <Image Name="road4.png" />
+            <Image Name="road5.png" />
+            <Image Name="road6.png" />
+            <Image Name="soundoff.png" />
+            <Image Name="soundon.png" />
+            <Image Name="STAR.png" />
+            <Image Name="starbag.png" />
+            <Image Name="starbagbg.png" />
+            <Image Name="yun.png" />
+          </Folder>
+          <Folder Name="prop">
+            <Image Name="addFive.png" />
+            <Image Name="change.png" />
+            <Image Name="goBack.png" />
+            <Image Name="hammer.png" />
+            <Image Name="rearrange.png" />
+            <Image Name="swapGem.png" />
+          </Folder>
+          <Folder Name="shop">
+            <Image Name="allItem.png" />
+            <Image Name="allItem2.png" />
+            <Image Name="buyBack.png" />
+            <Image Name="hotItem.png" />
+            <Image Name="hotItem2.png" />
+            <Image Name="itemBack.png" />
+            <Image Name="SHOPBG.png" />
+            <Image Name="tips.png" />
+            <Image Name="zheko.png" />
+            <Image Name="zheko2.png" />
+          </Folder>
+          <Folder Name="top">
+            <Image Name="bg.png" />
+          </Folder>
+          <Folder Name="zhekou">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Image Name="bg.jpg" />
+          <Image Name="gameBack1.jpg" />
+          <Image Name="gameBack2.jpg" />
+          <Image Name="glassbg.png" />
+          <Image Name="timeNumber.png" />
+        </Folder>
+        <Image Name="HelloWorld.png" />
+        <File Name="levelText.ini" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

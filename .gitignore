@@ -33,11 +33,3 @@ proj.win32/Debug.win32
 proj.win32/GemHero.VC.db
 proj.win32/GemHero.VC.VC.opendb
 proj.win32/UpgradeLog.htm
-
-#ignore Resources edite
-cocos2d
-cocosstudio
-config.json
-GemHero.ccs 
-GemHero.cfg 
-GemHero.udf
