@@ -35,4 +35,4 @@ proj.win32/GemHero.VC.VC.opendb
 proj.win32/UpgradeLog.htm
 
 #ignore Cocos2d files
-Cocos2d
+cocos2d
