@@ -24,6 +24,8 @@ LOCAL_WHOLE_STATIC_LIBRARIES := cocos2dx_static cocosdenshion_static cocos_exten
 LOCAL_WHOLE_STATIC_LIBRARIES += boost_system
 LOCAL_WHOLE_STATIC_LIBRARIES += boost_serialization
 
+LOCAL_BOOST_INCLUDES := $(LOCAL_PATH)/../../../third_party/boost
+
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
 
@@ -35,8 +37,8 @@ LOCAL_STATIC_LIBRARIES := cocos2dx_static
 
 include $(BUILD_SHARED_LIBRARY)
 
-$(call import-module,$(LOCAL_PATH)/../../../third_party/boost)
 $(call import-module,.)
+$(call import-module,$(LOCAL_BOOST_INCLUDES))
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
 # _COCOS_LIB_IMPORT_ANDROID_END

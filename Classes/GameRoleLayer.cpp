@@ -325,6 +325,7 @@ void CGameGemLayer::onTouchEnded(Touch *touch, Event *unused_event) {
 	{
 		tagGemData *scoreData = (tagGemData *)getData(_touchBeginIndex.x, _touchBeginIndex.y);
 		tagGemData *targetData = (tagGemData *)getData(_touchEndIndex.x, _touchEndIndex.y);
+		if (scoreData == nullptr || targetData == nullptr) return;
 		if (scoreData->bMove == false || targetData->bMove == false)
 		{
 			_isTouch = false;
