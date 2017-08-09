@@ -21,7 +21,6 @@ proj.android-studio/app/*.apk
 proj.android-studio/app/gradle.properties
 proj.android-studio/app/local.properties
 proj.android-studio/app/proguard-project.txt
-proj.android-studio/app/project.properties
 
 proj.android/obj
 proj.android/libs
@@ -34,6 +33,3 @@ proj.win32/Debug.win32
 proj.win32/GemHero.VC.db
 proj.win32/GemHero.VC.VC.opendb
 proj.win32/UpgradeLog.htm
-
-#ignore Cocos2d files
-/cocos2d/cocos
