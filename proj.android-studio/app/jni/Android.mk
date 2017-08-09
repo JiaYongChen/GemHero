@@ -7,9 +7,9 @@ $(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/external)
 $(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/cocos)
 $(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/cocos/audio/include)
 
-LOCAL_MODULE := MyGame_shared
+LOCAL_MODULE := GemHero_shared
 
-LOCAL_MODULE_FILENAME := libMyGame
+LOCAL_MODULE_FILENAME := libGemHero
 
 FILE_LIST := hellocpp/main.cpp
 
